@@ -3,6 +3,7 @@ package cat.emprul;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import cat.emprul.model.config.AppConfig;
@@ -10,6 +11,15 @@ import cat.emprul.model.config.DbConfig;
 import cat.emprul.model.entity.Event;
 import cat.emprul.model.entity.Race;
 import cat.emprul.model.service.EventService;
+
+//import org.springframework.context.ApplicationContext;
+//import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+//
+//import cat.emprul.model.config.AppConfig;
+//import cat.emprul.model.config.DbConfig;
+//import cat.emprul.model.entity.Event;
+//import cat.emprul.model.entity.Race;
+//import cat.emprul.model.service.EventService;
 
 public class AppTest {
 	public static void main(String[] args) {
@@ -36,5 +46,6 @@ public class AppTest {
 				}
 			}
 		}
+		((ConfigurableApplicationContext)ctx).close();
 	}
 }
