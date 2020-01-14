@@ -3,6 +3,7 @@
 	<name>eventcal_viewcontroller</name>
 	<comment></comment>
 	<projects>
+		<project>eventcal_model</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

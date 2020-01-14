@@ -4,7 +4,7 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <property name="context-root" value="eventcal_viewcontroller"/>
         <property name="java-output-path" value="/eventcal_viewcontroller/target/classes"/>
+        <property name="context-root" value="eventcal"/>
     </wb-module>
 </project-modules>
