@@ -21,4 +21,8 @@ public class EventService {
 	public Optional<Event> getCustomer(long eventId) {
 		return eventRepository.findById(eventId);
 	}
+	
+	public String getTitol() {
+		return "KAL";
+	}
 }

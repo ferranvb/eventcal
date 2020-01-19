@@ -32,7 +32,7 @@ public class DbConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
         emf.setDataSource(dataSource());
-        emf.setPackagesToScan("cat.emprul.model.entity");
+        emf.setPackagesToScan("cat.emprul.model");
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         emf.setJpaVendorAdapter(vendorAdapter);
