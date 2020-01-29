@@ -12,7 +12,7 @@ import cat.emprul.eventcal.view.BasicView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "cat.emprul" })
+@ComponentScan(basePackages = {"cat.emprul"})
 //@ImportResource({
 //	"classpath:META-INF/persistence.xml"
 //})

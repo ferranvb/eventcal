@@ -22,30 +22,30 @@ import cat.emprul.model.service.EventService;
 //import cat.emprul.model.service.EventService;
 
 public class AppTest {
-	public static void main(String[] args) {
-		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class, DbConfig.class);
+//	public static void main(String[] args) {
+//		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class, DbConfig.class);
 
 		//ApplicationContext ctx = new AnnotationConfigApplicationContext(DbConfig.class);	
 
-		EventService eventService = ctx.getBean(EventService.class);
-
-		Iterable<Event> llista = eventService.getAllEvents();
-
-		System.out.println("OK");
-		for (Event e : llista) {
-			System.out.print(e.getNom() + " :: ");
-			System.out.print(e.getDescripcio() + " :: ");
-			System.out.println(e.getLloc() + " :: ");
-			
-			List<Race> llistaRaces = e.getLlistaRaces();
-			
-			if ( llistaRaces != null) {
-				for ( Race r : e.getLlistaRaces()) {
-					System.out.println(" --- " + r.getNom());
-					System.out.println(" --- " + r.getDistancia() + " D+" + r.getDesnivellPos());
-				}
-			}
-		}
-		((ConfigurableApplicationContext)ctx).close();
-	}
+//		EventService eventService = ctx.getBean(EventService.class);
+//
+//		Iterable<Event> llista = eventService.getAllEvents();
+//
+//		System.out.println("OK");
+//		for (Event e : llista) {
+//			System.out.print(e.getNom() + " :: ");
+//			System.out.print(e.getDescripcio() + " :: ");
+//			System.out.println(e.getLloc() + " :: ");
+//			
+//			List<Race> llistaRaces = e.getLlistaRaces();
+//			
+//			if ( llistaRaces != null) {
+//				for ( Race r : e.getLlistaRaces()) {
+//					System.out.println(" --- " + r.getNom());
+//					System.out.println(" --- " + r.getDistancia() + " D+" + r.getDesnivellPos());
+//				}
+//			}
+//		}
+//		((ConfigurableApplicationContext)ctx).close();
+//	}
 }
