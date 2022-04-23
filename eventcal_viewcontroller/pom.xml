@@ -101,7 +101,7 @@
 
 	<properties>
 		<!-- Spring -->
-		<org.springframework.version>5.2.0.RELEASE</org.springframework.version>
+		<org.springframework.version>5.3.19</org.springframework.version>
 
 		<!-- JSF -->
 		<com.sun.faces.version>2.2.5</com.sun.faces.version>
